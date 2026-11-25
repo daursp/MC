@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог практик — Мягкая сила</title>
+  <meta name="description" content="Практики студии «Мягкая сила» в Оренбурге: хатха-йога, виньяса, универсальная йога, йога с тибетскими поющими чашами, стретчинг, mobility, растяжка с подкачкой, силовой пилатес.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="catalog">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Мягкая сила — на главную">
+        <img class="logo__image" src="images/logo.png" alt="Мягкая сила" width="229" height="51">
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="catalog.html" aria-current="page">Каталог</a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html">О студии</a></li>
+          <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--small" href="contacts.html">Записаться</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head" aria-labelledby="catalog-title">
+      <div class="container">
+        <p class="kicker">Каталог · один абонемент</p>
+        <h1 id="catalog-title">Практики<em>.</em></h1>
+        <p class="lead">Восемь направлений в горячем зале. Выберите то, что откликается, — остальное добавим по ходу.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="filters-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="filters-title">Фильтры каталога</h2>
+
+        <form class="filters" action="catalog.html" method="get" role="search">
+          <div class="filters__field">
+            <label for="search">Поиск по практикам</label>
+            <input type="search" id="search" name="q" placeholder="Например: виньяса, mobility" autocomplete="off">
+          </div>
+
+          <div class="filters__field">
+            <label for="category">Категория</label>
+            <select id="category" name="category">
+              <option value="">Все категории</option>
+              <option value="Горячий зал">Горячий зал</option>
+              <option value="Восстановление">Восстановление</option>
+              <option value="Стретчинг">Стретчинг</option>
+              <option value="Сила">Сила</option>
+            </select>
+          </div>
+
+          <div class="filters__field">
+            <label for="sort">Сортировка</label>
+            <select id="sort" name="sort">
+              <option value="">По порядку</option>
+              <option value="price-asc">Сначала дешевле</option>
+              <option value="price-desc">Сначала дороже</option>
+              <option value="title">По названию</option>
+            </select>
+          </div>
+
+          <button class="btn" type="submit">Показать</button>
+        </form>
+
+        <p class="catalog__count">Найдено: 8 практик</p>
+
+        <div class="catalog">
+          <article class="practice" id="hatha-yoga">
+            <figure class="practice__media">
+              <img src="images/products/hatha.jpg" alt="Хатха-йога в горячем зале" width="640" height="480">
+            </figure>
+            <div class="practice__body">
+              <p class="kicker">Горячий зал</p>
+              <h2 class="practice__title">Хатха-йога</h2>
+              <p class="practice__text">Классическая практика в тепле: асаны, дыхание, спокойный темп. Подойдёт новичкам и тем, кто возвращается после перерыва.</p>
+              <dl class="practice__meta">
+                <div class="practice__meta-item">
+                  <dt>Длительность</dt>
+                  <dd>90 минут</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Уровень</dt>
+                  <dd>Для всех</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Стоимость</dt>
+                  <dd>1 500 ₽</dd>
+                </div>
+              </dl>
+              <a class="btn btn--line" href="contacts.html">Записаться</a>
+            </div>
+          </article>
+
+          <article class="practice" id="vinyasa">
+            <figure class="practice__media">
+              <img src="images/products/vinyasa.jpg" alt="Виньяса-йога в горячем зале" width="640" height="480">
+            </figure>
+            <div class="practice__body">
+              <p class="kicker">Горячий зал</p>
+              <h2 class="practice__title">Виньяса-йога</h2>
+              <p class="practice__text">Плавный поток, где одно движение перетекает в другое. В жаре связки идут мягче, а внимание удерживается на дыхании.</p>
+              <dl class="practice__meta">
+                <div class="practice__meta-item">
+                  <dt>Длительность</dt>
+                  <dd>90 минут</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Уровень</dt>
+                  <dd>Средний</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Стоимость</dt>
+                  <dd>1 500 ₽</dd>
+                </div>
+              </dl>
+              <a class="btn btn--line" href="contacts.html">Записаться</a>
+            </div>
+          </article>
+
+          <article class="practice" id="universal-yoga">
+            <figure class="practice__media">
+              <img src="images/products/universal.jpg" alt="Универсальная йога" width="640" height="480">
+            </figure>
+            <div class="practice__body">
+              <p class="kicker">Горячий зал</p>
+              <h2 class="practice__title">Универсальная йога</h2>
+              <p class="practice__text">Сила, растяжка и баланс в одной практике. Каждое занятие выстраивается вокруг тела и состояния группы.</p>
+              <dl class="practice__meta">
+                <div class="practice__meta-item">
+                  <dt>Длительность</dt>
+                  <dd>90 минут</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Уровень</dt>
+                  <dd>Для всех</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Стоимость</dt>
+                  <dd>1 500 ₽</dd>
+                </div>
+              </dl>
+              <a class="btn btn--line" href="contacts.html">Записаться</a>
+            </div>
+          </article>
+
+          <article class="practice" id="tibetan-bowls">
+            <figure class="practice__media">
+              <img src="images/products/bowls.jpg" alt="Йога с тибетскими поющими чашами" width="640" height="480">
+            </figure>
+            <div class="practice__body">
+              <p class="kicker">Восстановление</p>
+              <h2 class="practice__title">Йога с тибетскими поющими чашами</h2>
+              <p class="practice__text">Спокойные асаны, дыхание и звук чаш. Помогает замедлиться, снять напряжение после рабочего дня и вернуться в тело.</p>
+              <dl class="practice__meta">
+                <div class="practice__meta-item">
+                  <dt>Длительность</dt>
+                  <dd>90 минут</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Уровень</dt>
+                  <dd>Для всех</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Стоимость</dt>
+                  <dd>1 500 ₽</dd>
+                </div>
+              </dl>
+              <a class="btn btn--line" href="contacts.html">Записаться</a>
+            </div>
+          </article>
+
+          <article class="practice" id="stretching">
+            <figure class="practice__media">
+              <img src="images/products/stretching.jpg" alt="Стретчинг в тёплом зале" width="640" height="480">
+            </figure>
+            <div class="practice__body">
+              <p class="kicker">Стретчинг</p>
+              <h2 class="practice__title">Стретчинг</h2>
+              <p class="practice__text">Длинные удержания и работа с подвижностью суставов. Тепло помогает тянуться комфортнее, без резких движений.</p>
+              <dl class="practice__meta">
+                <div class="practice__meta-item">
+                  <dt>Длительность</dt>
+                  <dd>90 минут</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Уровень</dt>
+                  <dd>Для всех</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Стоимость</dt>
+                  <dd>1 500 ₽</dd>
+                </div>
+              </dl>
+              <a class="btn btn--line" href="contacts.html">Записаться</a>
+            </div>
+          </article>
+
+          <article class="practice" id="mobility">
+            <figure class="practice__media">
+              <img src="images/products/mobility.jpg" alt="Mobility — подвижность суставов" width="640" height="480">
+            </figure>
+            <div class="practice__body">
+              <p class="kicker">Стретчинг</p>
+              <h2 class="practice__title">Mobility</h2>
+              <p class="practice__text">Работа с подвижностью суставов: плечи, таз, позвоночник. Упражнения помогают движению быть свободным.</p>
+              <dl class="practice__meta">
+                <div class="practice__meta-item">
+                  <dt>Длительность</dt>
+                  <dd>60 минут</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Уровень</dt>
+                  <dd>Для всех</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Стоимость</dt>
+                  <dd>1 500 ₽</dd>
+                </div>
+              </dl>
+              <a class="btn btn--line" href="contacts.html">Записаться</a>
+            </div>
+          </article>
+
+          <article class="practice" id="stretch-power">
+            <figure class="practice__media">
+              <img src="images/products/stretch-power.jpg" alt="Растяжка с подкачкой" width="640" height="480">
+            </figure>
+            <div class="practice__body">
+              <p class="kicker">Стретчинг</p>
+              <h2 class="practice__title">Растяжка с подкачкой</h2>
+              <p class="practice__text">Чередуем длинные вытяжения и упражнения на мышцы-стабилизаторы. Тело получает и мягкость, и опору.</p>
+              <dl class="practice__meta">
+                <div class="practice__meta-item">
+                  <dt>Длительность</dt>
+                  <dd>90 минут</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Уровень</dt>
+                  <dd>Средний</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Стоимость</dt>
+                  <dd>1 500 ₽</dd>
+                </div>
+              </dl>
+              <a class="btn btn--line" href="contacts.html">Записаться</a>
+            </div>
+          </article>
+
+          <article class="practice" id="pilates">
+            <figure class="practice__media">
+              <img src="images/products/pilates.jpg" alt="Силовой пилатес" width="640" height="480">
+            </figure>
+            <div class="practice__body">
+              <p class="kicker">Сила</p>
+              <h2 class="practice__title">Силовой пилатес</h2>
+              <p class="practice__text">Акцент на кор, осанку и контроль движения. Укрепляет мышцы без ударной нагрузки и помогает чувствовать тело собранным.</p>
+              <dl class="practice__meta">
+                <div class="practice__meta-item">
+                  <dt>Длительность</dt>
+                  <dd>60 минут</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Уровень</dt>
+                  <dd>Средний</dd>
+                </div>
+                <div class="practice__meta-item">
+                  <dt>Стоимость</dt>
+                  <dd>1 500 ₽</dd>
+                </div>
+              </dl>
+              <a class="btn btn--line" href="contacts.html">Записаться</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="catalog__note" aria-labelledby="prices-note-title">
+          <h2 class="catalog__note-title" id="prices-note-title">Важно</h2>
+          <p>Специальные цены на абонементы действуют в ноябре. В стоимость входит аренда коврика и полотенца. Пробное посещение — один раз, 1 100 ₽ вместо 1 500 ₽. Абонемент не привязан к одному направлению: можно пробовать разное.</p>
+          <a class="link" href="https://n2128721.yclients.ru" target="_blank" rel="noopener">Актуальное расписание и свободные места <span aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="catalog-cta-title">
+      <div class="container cta__inner">
+        <div class="cta__content">
+          <p class="kicker">Пробное</p>
+          <h2 id="catalog-cta-title">Не знаете,<br>с чего начать?</h2>
+          <p>Пробное посещение любой практики — 1 100 ₽. Администратор подскажет, что подойдёт именно вам.</p>
+        </div>
+        <a class="btn btn--light" href="contacts.html">Записаться</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <section class="footer__brand" aria-labelledby="footer-brand-title">
+        <a class="logo" href="index.html" aria-label="Мягкая сила — на главную">
+          <img class="logo__image" src="images/logo.png" alt="Мягкая сила" width="229" height="51">
+        </a>
+        <h2 class="footer__title" id="footer-brand-title">Студия горячей йоги</h2>
+        <p>Уникальный зал горячих практик для ментального здоровья и укрепления мышц. Оренбург.</p>
+      </section>
+
+      <nav class="footer__col" aria-labelledby="footer-nav-title">
+        <h2 class="footer__title" id="footer-nav-title">Навигация</h2>
+        <ul class="footer__list">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О студии</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer__col" aria-labelledby="footer-contacts-title">
+        <h2 class="footer__title" id="footer-contacts-title">Контакты</h2>
+        <address class="footer__address">
+          <a href="tel:+79033989050">+7&nbsp;(903)&nbsp;398&#8209;90&#8209;50</a>
+          <p>Оренбург, Сакмарский пер., 9<br>ул. 8 Марта, 33</p>
+          <p>Ежедневно, 08:00 — 22:00</p>
+        </address>
+      </section>
+
+      <section class="footer__col" aria-labelledby="footer-social-title">
+        <h2 class="footer__title" id="footer-social-title">Соцсети</h2>
+        <ul class="footer__list">
+          <li><a href="https://www.instagram.com/sftpwr.ru/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://n2128721.yclients.ru" target="_blank" rel="noopener">Онлайн-запись</a></li>
+          <li><a href="https://yandex.ru/maps/org/myagkaya_sila/109039562760" target="_blank" rel="noopener">Яндекс Карты</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© 2026 Мягкая сила · студия горячей йоги</p>
+      <p>Оренбург · 38 °C</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

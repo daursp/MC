@@ -1,0 +1,27 @@
+{
+  "name": "myagkaya-sila-copy",
+  "version": "1.0.0",
+  "description": "Копия сайта студии «Мягкая сила»: структура проекта и HTML-разметка (день 8–9)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node src/models/initDatabase.js"
+  },
+  "keywords": [
+    "yoga",
+    "express",
+    "sqlite",
+    "html",
+    "semantic-markup"
+  ],
+  "author": "Мягкая сила",
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — Мягкая сила</title>
+  <meta name="description" content="Контакты студии горячей йоги «Мягкая сила» в Оренбурге: Сакмарский переулок, 9 / ул. 8 Марта, 33. Телефон, часы работы и форма записи.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contacts">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="Мягкая сила — на главную">
+        <img class="logo__image" src="images/logo.png" alt="Мягкая сила" width="229" height="51">
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html">О студии</a></li>
+          <li class="nav__item"><a class="nav__link" href="contacts.html" aria-current="page">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--small" href="contacts.html">Записаться</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head" aria-labelledby="contacts-title">
+      <div class="container">
+        <p class="kicker">Контакты · Оренбург</p>
+        <h1 id="contacts-title">Приходи<br><em>в жар</em></h1>
+        <p class="lead">Мы в центре города. Звоните, пишите в Instagram или оставьте заявку — администратор поможет выбрать практику и время.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="contacts-info-title">
+      <div class="container contacts">
+        <div class="contacts__info">
+          <h2 class="visually-hidden" id="contacts-info-title">Контактная информация</h2>
+
+          <dl class="info-rows">
+            <div class="info-row">
+              <dt class="info-row__label">Адрес</dt>
+              <dd class="info-row__value">
+                <address>Сакмарский пер., 9 / ул. 8 Марта, 33</address>
+                <small>Оренбург · вход в студию</small>
+              </dd>
+            </div>
+
+            <div class="info-row">
+              <dt class="info-row__label">Телефон</dt>
+              <dd class="info-row__value">
+                <a href="tel:+79033989050">+7&nbsp;(903)&nbsp;398&#8209;90&#8209;50</a>
+                <small>Ежедневно с 08:00 до 22:00</small>
+              </dd>
+            </div>
+
+            <div class="info-row">
+              <dt class="info-row__label">Часы работы</dt>
+              <dd class="info-row__value">
+                <p>08:00 — 22:00</p>
+                <small>по расписанию занятий</small>
+              </dd>
+            </div>
+
+            <div class="info-row">
+              <dt class="info-row__label">Instagram</dt>
+              <dd class="info-row__value">
+                <a href="https://www.instagram.com/sftpwr.ru/" target="_blank" rel="noopener">@sftpwr.ru</a>
+                <small>расписание, атмосфера и анонсы</small>
+              </dd>
+            </div>
+
+            <div class="info-row">
+              <dt class="info-row__label">Онлайн-запись</dt>
+              <dd class="info-row__value">
+                <a href="https://n2128721.yclients.ru" target="_blank" rel="noopener">Записаться на практику</a>
+                <small>живое расписание и свободные места</small>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <article class="contact-form-wrap" aria-labelledby="form-title">
+          <p class="kicker">Заявка</p>
+          <h2 id="form-title">Оставить заявку</h2>
+          <p>Перезвоним в течение дня и подберём удобное время. Пробное посещение — 1 100 ₽.</p>
+
+          <form class="form" action="#" method="post">
+            <fieldset class="form__group">
+              <legend class="visually-hidden">Контактные данные</legend>
+
+              <div class="field">
+                <label for="contact-name">Имя</label>
+                <input id="contact-name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name" required>
+              </div>
+
+              <div class="field">
+                <label for="contact-phone">Телефон</label>
+                <input id="contact-phone" name="phone" type="tel" placeholder="+7 900 000-00-00" autocomplete="tel" required>
+              </div>
+
+              <div class="field">
+                <label for="contact-service">Интересующая практика</label>
+                <select id="contact-service" name="service">
+                  <option value="">Не выбрана</option>
+                  <option value="hatha-yoga">Хатха-йога</option>
+                  <option value="vinyasa">Виньяса-йога</option>
+                  <option value="universal-yoga">Универсальная йога</option>
+                  <option value="tibetan-bowls">Йога с тибетскими поющими чашами</option>
+                  <option value="stretching">Стретчинг</option>
+                  <option value="mobility">Mobility</option>
+                  <option value="stretch-power">Растяжка с подкачкой</option>
+                  <option value="pilates">Силовой пилатес</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="contact-comment">Сообщение</label>
+                <textarea id="contact-comment" name="comment" rows="4" placeholder="Расскажите о запросе или задайте вопрос"></textarea>
+              </div>
+            </fieldset>
+
+            <button class="btn btn--full" type="submit">Отправить заявку</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="map-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="map-title">Как нас найти</h2>
+        <figure class="map">
+          <img src="images/photo.adres.png" alt="Студия «Мягкая сила» — адрес и вход" width="860" height="413">
+          <figcaption>Оренбург, Сакмарский пер., 9 / ул. 8 Марта, 33</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="contacts-cta-title">
+      <div class="container cta__inner">
+        <div class="cta__content">
+          <p class="kicker">Первый шаг</p>
+          <h2 id="contacts-cta-title">Приходите<br>на практику</h2>
+          <p>Пробное посещение — 1 100 ₽ вместо 1 500 ₽. Приходите за 15 минут до начала — покажем студию и всё расскажем.</p>
+        </div>
+        <a class="btn btn--light" href="tel:+79033989050">Позвонить</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <section class="footer__brand" aria-labelledby="footer-brand-title">
+        <a class="logo" href="index.html" aria-label="Мягкая сила — на главную">
+          <img class="logo__image" src="images/logo.png" alt="Мягкая сила" width="229" height="51">
+        </a>
+        <h2 class="footer__title" id="footer-brand-title">Студия горячей йоги</h2>
+        <p>Уникальный зал горячих практик для ментального здоровья и укрепления мышц. Оренбург.</p>
+      </section>
+
+      <nav class="footer__col" aria-labelledby="footer-nav-title">
+        <h2 class="footer__title" id="footer-nav-title">Навигация</h2>
+        <ul class="footer__list">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="about.html">О студии</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer__col" aria-labelledby="footer-contacts-title">
+        <h2 class="footer__title" id="footer-contacts-title">Контакты</h2>
+        <address class="footer__address">
+          <a href="tel:+79033989050">+7&nbsp;(903)&nbsp;398&#8209;90&#8209;50</a>
+          <p>Оренбург, Сакмарский пер., 9<br>ул. 8 Марта, 33</p>
+          <p>Ежедневно, 08:00 — 22:00</p>
+        </address>
+      </section>
+
+      <section class="footer__col" aria-labelledby="footer-social-title">
+        <h2 class="footer__title" id="footer-social-title">Соцсети</h2>
+        <ul class="footer__list">
+          <li><a href="https://www.instagram.com/sftpwr.ru/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://n2128721.yclients.ru" target="_blank" rel="noopener">Онлайн-запись</a></li>
+          <li><a href="https://yandex.ru/maps/org/myagkaya_sila/109039562760" target="_blank" rel="noopener">Яндекс Карты</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© 2026 Мягкая сила · студия горячей йоги</p>
+      <p>Оренбург · 38 °C</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
