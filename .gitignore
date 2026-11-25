@@ -1,0 +1,15 @@
+# Зависимости
+node_modules/
+
+# Переменные окружения
+.env
+
+# База данных и её служебные файлы
+database.db
+database.db-journal
+database.db-wal
+database.db-shm
+
+# Системные файлы
+.DS_Store
+Thumbs.db
