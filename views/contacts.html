@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="Контакты студии горячей йоги «Мягкая сила» в Оренбурге: Сакмарский переулок, 9 / ул. 8 Марта, 33. Телефон, часы работы и форма записи.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="contacts">
+<!--NAV-->
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <p class="kicker">Контакты · Оренбург</p>
+      <h1>Приходи<br><em>в жар</em></h1>
+      <p class="lead">Мы в центре города. Звоните, пишите в Instagram или оставьте заявку — администратор поможет выбрать практику и время.</p>
+    </div>
+  </section>
+
+  <section class="container contacts">
+    <div>
+      <dl class="info-rows">
+        <div class="info-row">
+          <dt>Адрес</dt>
+          <dd>Сакмарский пер., 9 / ул. 8 Марта, 33
+            <small>Оренбург · вход в студию</small>
+          </dd>
+        </div>
+        <div class="info-row">
+          <dt>Телефон</dt>
+          <dd><a href="tel:+79033989050">+7 (903) 398-90-50</a>
+            <small>Ежедневно с 08:00 до 22:00</small>
+          </dd>
+        </div>
+        <div class="info-row">
+          <dt>Часы работы</dt>
+          <dd>08:00 — 22:00
+            <small>по расписанию занятий</small>
+          </dd>
+        </div>
+        <div class="info-row">
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/sftpwr.ru/" target="_blank" rel="noopener">@sftpwr.ru</a>
+            <small>расписание, атмосфера и анонсы</small>
+          </dd>
+        </div>
+        <div class="info-row">
+          <dt>Онлайн-запись</dt>
+          <dd><a href="https://n2128721.yclients.ru" target="_blank" rel="noopener">Записаться на практику</a>
+            <small>живое расписание и свободные места</small>
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="contact-form-wrap">
+      <p class="kicker">Заявка</p>
+      <h2>Оставить заявку</h2>
+      <p>Перезвоним в течение дня и подберём удобное время. Пробное посещение — 1 100 ₽.</p>
+
+      
+      <form class="form" id="contact-form" data-booking novalidate>
+        <div class="field">
+          <label for="cf-name">Имя</label>
+          <input id="cf-name" name="name" type="text" placeholder="Как к вам обращаться" required>
+        </div>
+        <div class="field">
+          <label for="cf-phone">Телефон</label>
+          <input id="cf-phone" name="phone" type="tel" placeholder="+7 900 000-00-00" required>
+        </div>
+        <div class="field">
+          <label for="cf-service">Интересующая практика</label>
+          <select id="cf-service" name="serviceId">
+            <option value="">Не выбрана</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cf-comment">Сообщение</label>
+          <textarea id="cf-comment" name="comment" rows="4" placeholder="Расскажите о запросе или задайте вопрос"></textarea>
+        </div>
+        <button class="btn btn--full" type="submit">Отправить заявку</button>
+        <p class="form__msg" id="contact-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="container" style="padding-bottom: 90px;">
+    <div class="photo" data-photo="/img/photo.adres.png" data-hint="СТУДИЯ · адрес" data-alt="Студия «Мягкая сила» — адрес" style="aspect-ratio: 2.08 / 1; max-width: 860px; margin: 0 auto;"></div>
+  </section>
+</main>
+
+<!--FOOTER-->
+</body>
+</html>

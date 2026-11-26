@@ -1,20 +1,22 @@
 {
-  "name": "myagkaya-sila-copy",
+  "name": "myagkaya-sila-yoga-studio",
   "version": "1.0.0",
-  "description": "Копия сайта студии «Мягкая сила»: структура проекта и HTML-разметка (день 8–9)",
-  "main": "src/server.js",
+  "description": "Сайт студии «Мягкая сила» — Node.js, Express, SQLite, Fetch API",
+  "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js",
-    "db:init": "node src/models/initDatabase.js"
+    "start": "node server.js",
+    "start:proxy": "node --use-env-proxy server.js",
+    "dev": "node --watch server.js",
+    "seed": "node seed.js",
+    "telegram:test": "node scripts/telegram-test.js",
+    "telegram:test:proxy": "node --use-env-proxy scripts/telegram-test.js"
   },
   "keywords": [
     "yoga",
     "express",
     "sqlite",
-    "html",
-    "semantic-markup"
+    "fetch-api"
   ],
   "author": "Мягкая сила",
   "license": "ISC",
