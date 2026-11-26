@@ -1,15 +1,8 @@
-# Зависимости
 node_modules/
+data/
 
-# Переменные окружения
+# Переменные окружения (секреты — не коммитить)
 .env
-
-# База данных и её служебные файлы
-database.db
-database.db-journal
-database.db-wal
-database.db-shm
-
-# Системные файлы
+*.log
 .DS_Store
 Thumbs.db
